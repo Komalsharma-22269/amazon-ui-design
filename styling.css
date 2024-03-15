@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    background-color: #e3e3e3;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-country{
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+    color: #c4c4c4;
+    margin-left: 15px;
+}
+
+.nav-country h1{
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav-search{
+    flex: 1; /* flex one will use the entire  space available in this row */
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #808080;
+    border: 0.1rem solid rgb(112, 111, 111);
+    border-radius: 4px;
+    max-width: 1000px;
+    margin-left: 15px;
+}
+
+.nav-search-gategory{
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    border-radius: 4px 0 0 4px;
+}
+ 
+.nav-search-input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.nav-search-icon{
+    background-color: #ffd64f;
+    max-width: 41px;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-language{
+    font-weight: 600;
+    gap: 2px;
+    margin-left: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.nav-text{
+    margin-left: 15px;
+}
+
+.nav-text h1{
+    font-size: 14px;
+} 
+
+.nav-text p{
+    font-size: 10px;
+}
+
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.nav-bottom{
+    background-color: #232f3e;
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 20px;
+}
+
+.nav-bottom div{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.header-slider ul{
+   display: flex;
+   overflow-y: hidden; /* (in this all images will be shown in x-axis only......and not on y-axis bcz y-axis is hidden) */
+   }
+
+.header-img{
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000 50% , transparent 100%);
+   }
+
+.header-slider a{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    background-color: #ffffff4f;
+    color: #0000007b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5vh 1vw;
+}
+
+.control_next{
+    right: 0;
+}
+
+ .box-row{
+     display: flex;
+     flex-wrap: wrap;
+     row-gap: 20px;
+     justify-content: space-between;
+     margin: 20px 30px;
+}
+
+.box-column{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    max-width: 24%;
+    min-height: 200px;
+    z-index: 1;
+} 
+
+.box-column a {
+    color: #099;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.header-box{
+    margin-top: -20vw;/* (by this header box will overlay the .box-column and then we use z-index;) */
+}
+
+.products-slider{
+    background-color: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* .products{
+    background-color: #fff;
+    margin: 15px 30px;
+    display: flex;
+} */
+
+.products-slider .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.products img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* TO HIDE THE SCROLLBAR WE CAN USE THIS  */
+/* .products-slider ::-webkit-scrollbar{
+    display: none;
+} */
+
+.products-slider-with-price{
+    background-color: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.products-slider-with-price .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* TO HIDE THE SCROLLBAR WE USE THIS */
+/* .products-slider-with-price  ::-webkit-scrollbar{
+    display: none;
+} */
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 210px;
+    background-color: #fbfbfb;
+}
+
+.product-card img{
+   width: 110px; 
+   margin: 0 50px;
+}
+
+.product-offer p{
+   background-color: #be0b3b;
+   color: #fff;
+   display: inline-block;
+   padding: 2px 5px;
+   border-radius: 2px;
+   margin: 8px 0;
+   font-size: 13px;
+}
+
+.product-offer span{
+    color: #be0b3b;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.product-price {
+    color: #808080;
+    font-size: 13px;
+}
+
+.product-card h4{
+    color: #525252;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer{
+   background-color: #131921;
+   color: #fff;
+   align-items: center;
+   justify-content: space-between;
+   display: flex;
+   padding: 20px 60px;
+}
